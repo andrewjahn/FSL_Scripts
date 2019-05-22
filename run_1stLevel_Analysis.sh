@@ -17,8 +17,8 @@ for id in `seq -w 1 26` ; do
 
         # Copy the design files into the subject directory, and then
         # change “sub-08” to the current subject number
-        cp $scriptDir/design_run1.fsf .
-        cp $scriptDir/design_run2.fsf .
+        cp ../design_run1.fsf .
+        cp ../design_run2.fsf .
 
         # Note that we are using the | character to delimit the patterns
         # instead of the usual / character because there are / characters
