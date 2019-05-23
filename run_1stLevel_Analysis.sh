@@ -35,7 +35,8 @@ for id in `seq -w 1 26` ; do
         feat design_run2.fsf
                 echo
 
-    cd $dataDir
+    # Go back to the directory containing all of the subjects, and repeat the loop
+    cd ..
 done
 
 echo
