@@ -23,9 +23,9 @@ for id in `seq -w 1 26` ; do
         # Note that we are using the | character to delimit the patterns
         # instead of the usual / character because there are / characters
         # in the pattern.
-        sed -i "s|sub-08|${subj}|g" \
+        sed -i '' "s|sub-08|${subj}|g" \
             design_run1.fsf
-        sed -i "s|sub-08|${subj}|g" \
+        sed -i '' "s|sub-08|${subj}|g" \
             design_run2.fsf
 
         # Now everything is set up to run feat
