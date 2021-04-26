@@ -11,7 +11,7 @@ for id in `seq -w 1 16` ; do
         
         # If the brain mask doesn’t exist, create it
         if [ ! -f anat/${subj}_T1w_brain.nii.gz ]; then
-            echo "Skull-stripped brain not found, using bet with a fractional intensity threshold of 0.2"
+            echo "Skull-stripped brain not found, creating it..."
             # Note: This fractional intensity appears to work well for most of the subjects in the
             # Flanker dataset. You may want to change it if you modify this script for your own study.
             bet2 anat/${subj}_T1w.nii.gz \
