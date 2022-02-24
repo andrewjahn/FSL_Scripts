@@ -3,7 +3,7 @@
   # Generate the subject list to make modifying this script
   # to run just a subset of subjects easier.
 
-  for id in `seq -w 1 2` ; do
+  for id in 01 ; do
       subj="sub-$id"
       echo "===> Starting processing of $subj"
       echo
